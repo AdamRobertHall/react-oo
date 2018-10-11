@@ -1,0 +1,38 @@
+{
+  "name": "react-oo",
+  "version": "1.0.0",
+  "description": "oo helps you create pages easily",
+  "main": "index.js",
+  "directories": {
+    "components": "components"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "dependencies": {
+    "antd": "^3.8.0",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "uuid": "^3.3.2"
+  },
+  "keywords": [
+    "oo",
+    "page",
+    "creator",
+    "react",
+    "frontend"
+  ],
+  "devDependencies": {
+    "react": "^16.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamRobertHall/oo.git"
+  },
+  "author": "AdamRobertHall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamRobertHall/oo/issues"
+  },
+  "homepage": "https://github.com/AdamRobertHall/oo#readme"
+}
