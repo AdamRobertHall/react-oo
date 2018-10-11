@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Form from 'antd/lib/form'
-import {PageCreator} from 'oo'
+import {PageCreator} from 'react-oo'
 const {createItems, configToItemProps} = PageCreator;
 
 class Fields extends Component {

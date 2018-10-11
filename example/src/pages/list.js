@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Popconfirm from 'antd/lib/popconfirm'
 import Table from 'antd/lib/table'
-import {PageCreator, Search} from 'oo';
+import {PageCreator, Search} from 'react-oo';
 import Modify from './modify'
 import New from './new'
 import Detail from './detail'
