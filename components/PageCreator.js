@@ -1,21 +1,22 @@
 import React from 'react'
 import moment from 'moment';
-const Row = require('antd/lib/row');
-const Col = require('antd/lib/col');
-const Select = require('antd/lib/select');
-const Form = require('antd/lib/form');
-const Input = require('antd/lib/input');
-const InputNumber = require('antd/lib/input-number');
-const Cascader = require('antd/lib/cascader');
-const DatePicker = require('antd/lib/date-picker');
-const Checkbox = require('antd/lib/checkbox');
-const Radio = require('antd/lib/radio');
-const Slider = require('antd/lib/slider');
-const Switch = require('antd/lib/switch');
-const TimePicker = require('antd/lib/time-picker');
-const Transfer = require('antd/lib/transfer');
-const TreeSelect = require('antd/lib/tree-select');
-const Upload = require('antd/lib/upload');
+import Row from 'antd/lib/row'
+import Col from 'antd/lib/col'
+import Select from 'antd/lib/select'
+import Form from 'antd/lib/form'
+import Input from 'antd/lib/input'
+import InputNumber from 'antd/lib/input-number'
+import Cascader from 'antd/lib/cascader'
+import DatePicker from 'antd/lib/date-picker'
+import Checkbox from 'antd/lib/checkbox'
+import Radio from 'antd/lib/radio'
+import Slider from 'antd/lib/slider'
+import Switch from 'antd/lib/switch'
+import TimePicker from 'antd/lib/time-picker'
+import Transfer from 'antd/lib/transfer'
+import TreeSelect from 'antd/lib/tree-select'
+import Upload from 'antd/lib/upload'
+import NumberArea from './NumberArea.js';
 const Option = Select.Option;
 const FormItem = Form.Item;
 const RangePicker = DatePicker.RangePicker;
@@ -120,7 +121,7 @@ export function createItem(getFieldDecorator, dataType, id, param, isSelect, dis
             component = getFieldDecorator(id, funcProps)(React.createElement(Input.TextArea, Object.assign({}, objProps)));
         } else if (dataType === 'NUMBER') {
             if (isForSearch) {
-                name = require(`./NumberArea.js`).default;
+                name = NumberArea;
             } else {
                 name = Input;
                 objProps.type = 'NUMBER';

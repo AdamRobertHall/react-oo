@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-const Input = require('antd/lib/input');
+import Input from 'antd/lib/input'
 const InputGroup = Input.Group;
 export default class NumberArea extends Component {
     constructor() {
